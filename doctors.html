@@ -1,0 +1,2065 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doctors | Healthora</title>
+        <meta
+            name="description"
+            content="Expert care, advanced treatments—your health, our top priority."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Doctors | Healthora Website" />
+        <meta
+            property="og:description"
+            content="Expert care, advanced treatments—your health, our top priority."
+        />
+        <meta property="og:url" content="https://healthora-html.vercel.app" />
+        <meta
+            property="og:image"
+            content="https://healthora-html.vercel.app/assets/images/logo.png"
+        />
+        <!-- Twitter Card Tags -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:site" content="@healthora" />
+        <meta property="twitter:title" content="Doctors | Healthora Website" />
+        <meta
+            property="twitter:description"
+            content="Expert care, advanced treatments—your health, our top priority."
+        />
+        <meta
+            property="twitter:image"
+            content="https://healthora-html.vercel.app/assets/images/logo.png"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://healthora-html.vercel.app" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="icon" type="icon" href="assets/images/favicon.jpg" />
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/datepicker.min.css" />
+        <link rel="stylesheet" href="assets/css/select.min.css" />
+    </head>
+
+    <body
+        class="font-plus-jakarta flex min-h-screen flex-col bg-white text-sm font-medium antialiased lg:text-base/5 lg:leading-6"
+    >
+        <div
+            class="screen-loader fixed inset-0 z-60 grid place-content-center bg-white"
+        >
+            <img
+                src="assets/images/loader.gif"
+                alt="loading"
+                loading="lazy"
+                width="800"
+                height="800"
+                class="h-auto w-[500px]"
+            />
+        </div>
+
+        <!-- Header -->
+        <header
+            id="top-header"
+            class="header bg-primary sticky top-0 z-50 lg:top-1 lg:mt-4 lg:bg-transparent"
+        >
+            <header class="w-full bg-primary fixed top-0 left-0 z-50">
+  <div class=" mx-auto px-4">
+    <div class="flex items-center justify-between h-20">
+
+      <!-- Logo -->
+      <div class="shrink-0">
+        <div class="relative inline-block rounded-b-xl bg-secondary px-2 py-6">
+          <a href="/">
+            <img
+              src="/Healthora/assets/images/logo-header.svg"
+              alt="Logo"
+              class="w-32 h-auto"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-end gap-6">
+
+        <!-- Home Dropdown -->
+        <div class="relative">
+          <button
+            id="homeDropdownBtn"
+            class="nav-links text-white inline-flex items-center gap-1 "
+          >
+            Home
+            <svg
+              id="homeArrow"
+              class="w-4 h-4 transition-transform "
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+
+          <ul
+            id="homeDropdown"
+            class="absolute left-0 mt-2 w-40 rounded-md bg-primary shadow-lg hidden"
+          >
+            <li>
+              <a href="/index.html" class="block px-4 py-2 text-sm text-white hover:bg-white/10">
+                Home 1
+              </a>
+            </li>
+            <li>
+              <a href="/index2.html" class="block px-4 py-2 text-sm text-white hover:bg-white/10">
+                Home 2
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="/about-us.html" class="nav-links text-white " >About Us</a>
+        <a href="/services.html" class="nav-links text-white">Services</a>
+        <a href="/doctors.html" class="nav-links text-white active">Doctors</a>
+        <a href="/contact-us.html" class="nav-links text-white">Contact</a>
+      </nav>
+
+      <!-- Right Actions (Desktop) -->
+      <div class="hidden lg:flex items-center gap-4">
+        <button id="themeToggle" class="btn btn-sm">🌙</button>
+
+        <button
+          id="rtlToggle"
+          class="w-10 h-10 rounded-md bg-primary text-white font-semibold"
+        >
+          <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 6h-3.17a15.4 15.4 0 00-1.6-3.56A8.03 8.03 0 0118.93 8zM12 4.07A13.5 13.5 0 0114.44 8H9.56A13.5 13.5 0 0112 4.07zM5.07 8A8.03 8.03 0 019.84 4.44 15.4 15.4 0 008.24 8H5.07zM4.07 10h3.64a17.2 17.2 0 000 4H4.07a7.96 7.96 0 010-4zm1 6h3.17a15.4 15.4 0 001.6 3.56A8.03 8.03 0 015.07 16zM12 19.93A13.5 13.5 0 019.56 16h4.88A13.5 13.5 0 0112 19.93zM18.93 16a8.03 8.03 0 01-4.77 3.56A15.4 15.4 0 0015.76 16h3.17zM19.93 14h-3.64a17.2 17.2 0 000-4h3.64a7.96 7.96 0 010 4z"/>
+  </svg>
+        </button>
+
+        <a href="signin.html" class="btn btn-sm bg-white text-primary">
+          Login
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobileMenuBtn"
+        class="lg:hidden text-white text-3xl"
+      >
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="lg:hidden hidden bg-primary border-t border-white/20"
+  >
+    <ul class="flex flex-col p-4 gap-3 text-white">
+
+      <li>
+        <button
+          id="mobileHomeBtn"
+          class="flex justify-between items-center w-full"
+        >
+          Home
+          <span id="mobileArrow">▼</span>
+        </button>
+
+        <ul id="mobileHomeDropdown" class="hidden pl-4 mt-2 space-y-2">
+          <li><a href="/index.html">Home 1</a></li>
+          <li><a href="/index2.html">Home 2</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/about-us.html">About Us</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/doctors.html">Doctors</a></li>
+      <li><a href="/contact-us.html">Contact</a></li>
+
+      <li class="flex gap-3 pt-4">
+        <button id="themeToggle" class="btn btn-sm">🌙</button>
+      <button
+          id="rtlToggle"
+          class="w-10 h-10 rounded-md bg-primary text-white font-semibold"
+        >
+          <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 6h-3.17a15.4 15.4 0 00-1.6-3.56A8.03 8.03 0 0118.93 8zM12 4.07A13.5 13.5 0 0114.44 8H9.56A13.5 13.5 0 0112 4.07zM5.07 8A8.03 8.03 0 019.84 4.44 15.4 15.4 0 008.24 8H5.07zM4.07 10h3.64a17.2 17.2 0 000 4H4.07a7.96 7.96 0 010-4zm1 6h3.17a15.4 15.4 0 001.6 3.56A8.03 8.03 0 015.07 16zM12 19.93A13.5 13.5 0 019.56 16h4.88A13.5 13.5 0 0112 19.93zM18.93 16a8.03 8.03 0 01-4.77 3.56A15.4 15.4 0 0015.76 16h3.17zM19.93 14h-3.64a17.2 17.2 0 000-4h3.64a7.96 7.96 0 010 4z"/>
+  </svg>
+        </button>
+        <a href="signin.html" class="btn btn-sm bg-white text-primary">Login</a>
+      </li>
+    </ul>
+  </div>
+
+
+        </header>
+        </header>
+
+        <!-- Main content -->
+        <div class="-mt-[100px] grow">
+            <div
+                class="relative bg-[url(/assets/images/doctors-bg.jpg)] bg-cover bg-no-repeat pt-[100px]"
+            >
+                <span class="bg-primary/70 absolute inset-0"></span>
+                <div
+                    class="relative  flex h-72 flex-col items-center justify-center lg:h-96"
+                >
+                    <h1
+                        class="font-roboto mb-5 text-center text-3xl/8 font-semibold text-white capitalize sm:text-3xl md:text-4xl/10 xl:text-6xl/[60px]"
+                    >
+                        Doctors
+                    </h1>
+                    <div
+                        class="border-gray bg-gray/40 text-gray-light inline-flex items-center gap-2.5 rounded-lg border px-3 py-1 font-semibold backdrop-blur-lg"
+                    >
+                        <a
+                            href="/index.html"
+                            class="inline-flex items-center justify-center gap-1.5 transition hover:opacity-80"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="fill-secondary size-5 shrink-0"
+                            >
+                                <path
+                                    d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"
+                                />
+                                <path d="M9 22V12h6v10" />
+                            </svg>
+                            Home
+                        </a>
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="size-5 shrink-0 text-white"
+                        >
+                            <path d="m6 17 5-5-5-5" />
+                            <path d="m13 17 5-5-5-5" />
+                        </svg>
+                        <span class="text-white">Doctors</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary py-16 lg:py-20">
+                <div class="">
+                    <div class="mb-10 text-center">
+                        <span
+                            class="bg-secondary/20 text-secondary mb-3 inline-flex items-center gap-1.5 rounded-lg p-2 text-xs font-bold uppercase lg:text-sm"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="flipheart size-5 shrink-0 text-white"
+                            >
+                                <path
+                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                ></path>
+                                <path
+                                    d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"
+                                ></path>
+                            </svg>
+                            Meet our team
+                        </span>
+                        <h2
+                            class="font-roboto mb-5 text-[26px]/8 font-semibold text-white sm:text-3xl lg:text-[40px]/[50px]"
+                        >
+                            A Dedicated Team of
+                            <span class="font-normal italic">
+                                Certified and Skilled Specialists</span
+                            >
+                        </h2>
+                        <p
+                            class="text-gray-light mx-auto max-w-lg text-sm lg:text-base"
+                        >
+                            Our doctors bring years of expertise and compassion
+                            to provide you with the highest standard of
+                            healthcare.
+                        </p>
+                    </div>
+                    <div
+                        class="mx-auto grid gap-6 lg:gap-8 xl:max-w-(--breakpoint-xl) xl:grid-cols-2"
+                    >
+                        <div
+                            class="relative flex flex-col items-center gap-5 overflow-hidden rounded-3xl p-4 sm:flex-row sm:gap-10 sm:p-5"
+                        >
+                            <div
+                                class="relative size-52 shrink-0 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    alt="Doctor img"
+                                    class="h-full w-full object-cover object-top"
+                                    src="assets/images/team1.jpg"
+                                />
+                            </div>
+                            <span
+                                class="from-secondary/20 to-secondary/0 absolute inset-0 bg-linear-to-l opacity-50"
+                            ></span>
+                            <div class="relative text-center sm:text-left">
+                                <a
+                                    class="text-xl font-semibold text-gray-100 transition hover:opacity-80 sm:text-2xl"
+                                    href="/doctors.html"
+                                    >Dr. Emma Newman</a
+                                >
+                                <p
+                                    class="text-secondary mt-1 text-sm tracking-wider"
+                                >
+                                    General
+                                </p>
+                               <p
+                                    class="text-gray-light mt-2.5 max-w-md font-light"
+                                >
+                                    Dr. Emma Newman provides comprehensive
+                                    primary care, focusing on holistic health
+                                    and preventive medicine for all age groups.
+                                </p>
+                                <div
+                                    class="border-secondary/50 mt-5 inline-flex gap-2.5 rounded-2xl border p-1.5 duration-300"
+                                >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">facebook</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://twitter.com/intent/tweet?url=https://healthora-html.vercel.app/&amp;text="
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">twitter</span></a
+                                    >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.instagram.com/?url=https%3A%2F%2Fhealthcare-theme-html.vercel.app%2F"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">instagram</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">Linkedin</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex flex-col items-center gap-5 overflow-hidden rounded-3xl p-4 sm:flex-row-reverse sm:gap-10 sm:p-5"
+                        >
+                            <div
+                                class="relative size-52 shrink-0 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    alt="Doctor img"
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                    class="h-full w-full object-cover object-top"
+                                    src="assets/images/team2.jpg"
+                                />
+                            </div>
+                            <span
+                                class="from-secondary/20 to-secondary/0 absolute inset-0 bg-linear-to-r opacity-50"
+                            ></span>
+                            <div class="relative text-center sm:text-right">
+                                <a
+                                    class="text-xl font-semibold text-gray-100 transition hover:opacity-80 sm:text-2xl"
+                                    href="/doctors.html"
+                                    >Dr. Liam Bennett</a
+                                >
+                                <p
+                                    class="text-secondary mt-1 text-sm tracking-wider"
+                                >
+                                    Pediatrics
+                                </p>
+                                <p
+                                    class="text-gray-light mt-2.5 max-w-md font-light"
+                                >
+                                    Dr. Liam Bennett specializes in child
+                                    health, offering expert care and
+                                    compassionate support for children and their
+                                    families.
+                                </p>
+                                <div
+                                    class="border-secondary/50 mt-5 inline-flex gap-2.5 rounded-2xl border p-1.5 duration-300"
+                                >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">facebook</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://twitter.com/intent/tweet?url=https://healthora-html.vercel.app/&amp;text="
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">twitter</span></a
+                                    >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.instagram.com/?url=https%3A%2F%2Fhealthcare-theme-html.vercel.app%2F"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">instagram</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">Linkedin</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex flex-col items-center gap-5 overflow-hidden rounded-3xl p-4 sm:flex-row sm:gap-10 sm:p-5"
+                        >
+                            <div
+                                class="relative size-52 shrink-0 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    alt="Doctor img"
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                    class="h-full w-full object-cover object-top"
+                                    src="assets/images/team3.jpg"
+                                />
+                            </div>
+                            <span
+                                class="from-secondary/20 to-secondary/0 absolute inset-0 bg-linear-to-l opacity-50"
+                            ></span>
+                            <div class="relative text-center sm:text-left">
+                                <a
+                                    class="text-xl font-semibold text-gray-100 transition hover:opacity-80 sm:text-2xl"
+                                    href="/doctors.html"
+                                >
+                                    Dr. Ava Lane</a
+                                >
+                                <p
+                                    class="text-secondary mt-1 text-sm tracking-wider"
+                                >
+                                    Cardiology
+                                </p>
+                                <p
+                                    class="text-gray-light mt-2.5 max-w-md font-light"
+                                >
+                                    Dr. Ava Lane is dedicated to advanced heart
+                                    care, delivering personalized treatments for
+                                    a wide range of cardiovascular conditions.
+                                </p>
+                                <div
+                                    class="border-secondary/50 mt-5 inline-flex gap-2.5 rounded-2xl border p-1.5 duration-300"
+                                >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">facebook</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://twitter.com/intent/tweet?url=https://healthora-html.vercel.app/&amp;text="
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">twitter</span></a
+                                    >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.instagram.com/?url=https%3A%2F%2Fhealthcare-theme-html.vercel.app%2F"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">instagram</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">Linkedin</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex flex-col items-center gap-5 overflow-hidden rounded-3xl p-4 sm:flex-row-reverse sm:gap-10 sm:p-5"
+                        >
+                            <div
+                                class="relative size-52 shrink-0 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    alt="Doctor img"
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                    class="h-full w-full object-cover object-top"
+                                    src="assets/images/team4.jpg"
+                                />
+                            </div>
+                            <span
+                                class="from-secondary/20 to-secondary/0 absolute inset-0 bg-linear-to-r opacity-50"
+                            ></span>
+                            <div class="relative text-center sm:text-right">
+                                <a
+                                    class="text-xl font-semibold text-gray-100 transition hover:opacity-80 sm:text-2xl"
+                                    href="/doctors.html"
+                                    >Dr. Mason Brooks</a
+                                >
+                                <p
+                                    class="text-secondary mt-1 text-sm tracking-wider"
+                                >
+                                    Orthopedic
+                                </p>
+                                <p
+                                    class="text-gray-light mt-2.5 max-w-md font-light"
+                                >
+                                    Dr. Mason Brooks provides expert diagnosis
+                                    and treatment for musculoskeletal
+                                    conditions, helping patients regain mobility
+                                    and strength.
+                                </p>
+                                <div
+                                    class="border-secondary/50 mt-5 inline-flex gap-2.5 rounded-2xl border p-1.5 duration-300"
+                                >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">facebook</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://twitter.com/intent/tweet?url=https://healthora-html.vercel.app/&amp;text="
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">twitter</span></a
+                                    >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.instagram.com/?url=https%3A%2F%2Fhealthcare-theme-html.vercel.app%2F"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">instagram</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">Linkedin</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex flex-col items-center gap-5 overflow-hidden rounded-3xl p-4 sm:flex-row sm:gap-10 sm:p-5"
+                        >
+                            <div
+                                class="relative size-52 shrink-0 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    alt="Doctor img"
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                    class="h-full w-full object-cover object-top"
+                                    src="assets/images/team5.jpg"
+                                />
+                            </div>
+                            <span
+                                class="from-secondary/20 to-secondary/0 absolute inset-0 bg-linear-to-l opacity-50"
+                            ></span>
+                            <div class="relative text-center sm:text-left">
+                                <a
+                                    class="text-xl font-semibold text-gray-100 transition hover:opacity-80 sm:text-2xl"
+                                    href="/doctors.html"
+                                    >Dr. James Walker</a
+                                >
+                                <p
+                                    class="text-secondary mt-1 text-sm tracking-wider"
+                                >
+                                    Dermatology
+                                </p>
+                                <p
+                                    class="text-gray-light mt-2.5 max-w-md font-light"
+                                >
+                                    Dr. James Walker specializes in skin, hair,
+                                    and nail health, offering advanced
+                                    treatments for medical and cosmetic
+                                    dermatological concerns.
+                                </p>
+                                <div
+                                    class="border-secondary/50 mt-5 inline-flex gap-2.5 rounded-2xl border p-1.5 duration-300"
+                                >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">facebook</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://twitter.com/intent/tweet?url=https://healthora-html.vercel.app/&amp;text="
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">twitter</span></a
+                                    >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.instagram.com/?url=https%3A%2F%2Fhealthcare-theme-html.vercel.app%2F"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">instagram</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">Linkedin</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex flex-col items-center gap-5 overflow-hidden rounded-3xl p-4 sm:flex-row-reverse sm:gap-10 sm:p-5"
+                        >
+                            <div
+                                class="relative size-52 shrink-0 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    alt="Doctor img"
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                    class="h-full w-full object-cover object-top"
+                                    src="assets/images/team6.jpg"
+                                />
+                            </div>
+                            <span
+                                class="from-secondary/20 to-secondary/0 absolute inset-0 bg-linear-to-r opacity-50"
+                            ></span>
+                            <div class="relative text-center sm:text-right">
+                                <a
+                                    class="text-xl font-semibold text-gray-100 transition hover:opacity-80 sm:text-2xl"
+                                    href="/doctors.html"
+                                    >Dr. Jessica Clark</a
+                                >
+                                <p
+                                    class="text-secondary mt-1 text-sm tracking-wider"
+                                >
+                                    Dentist
+                                </p>
+                                <p
+                                    class="text-gray-light mt-2.5 max-w-md font-light"
+                                >
+                                    Dr. Jessica Clark focuses on comprehensive
+                                    dental care, ensuring healthy smiles with
+                                    preventive and restorative treatments.
+                                </p>
+                                <div
+                                    class="border-secondary/50 mt-5 inline-flex gap-2.5 rounded-2xl border p-1.5 duration-300"
+                                >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">facebook</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://twitter.com/intent/tweet?url=https://healthora-html.vercel.app/&amp;text="
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">twitter</span></a
+                                    >
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.instagram.com/?url=https%3A%2F%2Fhealthcare-theme-html.vercel.app%2F"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">instagram</span>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        class="grid size-8 shrink-0 place-content-center rounded-full text-white opacity-100 transition hover:opacity-70"
+                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://healthora-html.vercel.app/"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="size-5 shrink-0"
+                                        >
+                                            <path
+                                                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
+                                            ></path>
+                                        </svg>
+                                        <span class="sr-only">Linkedin</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="container grid items-center gap-12 py-16 lg:py-20 xl:grid-cols-2 xl:gap-[100px]"
+            >
+                <div>
+                    <span
+                        class="bg-secondary/10 text-secondary mb-3 inline-flex items-center gap-1.5 rounded-lg p-2 text-xs font-bold uppercase lg:text-sm"
+                    >
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="flipheart text-primary size-5 shrink-0"
+                        >
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                            ></path>
+                            <path
+                                d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"
+                            ></path>
+                        </svg>
+                        Appointment
+                    </span>
+                    <h2
+                        class="font-roboto text-primary text-[26px]/8 font-semibold sm:text-3xl lg:text-[40px]/[50px]"
+                    >
+                        Welcoming New Patients
+                        <span class="font-normal italic"
+                            >with Exceptional Care</span
+                        >
+                    </h2>
+                    <div
+                        class="divide-secondary/20 mt-10 divide-y-2 divide-dashed xl:max-w-lg"
+                    >
+                        <div class="flex gap-5 px-4 pb-4">
+                            <span class="text-secondary mt-0.5">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="size-8 shrink-0"
+                                >
+                                    <path
+                                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                                    />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                            </span>
+                            <div>
+                                <h3
+                                    class="text-primary mb-1.5 text-lg font-semibold"
+                                >
+                                    Safe and Reliable Services
+                                </h3>
+                                <p class="text-gray text-sm lg:text-base">
+                                    We prioritize your safety with trusted
+                                    treatments and advanced medical protocols.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 px-4 py-4">
+                            <span class="text-secondary mt-0.5">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="size-8 shrink-0"
+                                >
+                                    <path
+                                        d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                                    />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </span>
+                            <div>
+                                <h3
+                                    class="text-primary mb-1.5 text-lg font-semibold"
+                                >
+                                    Expert Eye Care Solutions
+                                </h3>
+                                <p class="text-gray text-sm lg:text-base">
+                                    Our specialized team offers precise eye
+                                    surgeries for better vision and comfort.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 px-4 py-4">
+                            <span class="text-secondary mt-0.5">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="size-8 shrink-0"
+                                >
+                                    <path
+                                        d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+                                    />
+                                    <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+                                </svg>
+                            </span>
+                            <div>
+                                <h3
+                                    class="text-primary mb-1.5 text-lg font-semibold"
+                                >
+                                    24/7 Dedicated Support
+                                </h3>
+                                <p class="text-gray text-sm lg:text-base">
+                                    Our compassionate staff is available around
+                                    the clock to meet your healthcare needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="border-secondary/15 relative overflow-hidden rounded-xl border bg-white shadow-[0px_5px_60px_rgba(0,0,0,0.05)]"
+                >
+                    <div
+                        class="from-secondary/10 flex h-full flex-col bg-linear-to-br to-white p-5 sm:px-14 sm:py-10"
+                    >
+                        <img
+                            src="/Healthora/assets/images/bag.png"
+                            alt="Bag"
+                            class="absolute top-1/2 left-1/2 h-auto w-52 -translate-x-1/2 -translate-y-1/2 opacity-3"
+                        />
+                        <h3
+                            class="text-primary relative mb-5 text-2xl font-bold"
+                        >
+                            Make an Appointment
+                        </h3>
+                        <form class="space-y-5">
+                            <div class="grid gap-5 sm:grid-cols-2">
+                                <div class="relative">
+                                    <span
+                                        class="absolute top-1/2 left-2.5 z-1 -translate-y-1/2"
+                                    >
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="text-secondary size-5"
+                                        >
+                                            <circle
+                                                cx="12"
+                                                cy="8"
+                                                r="5"
+                                            ></circle>
+                                            <path
+                                                d="M20 21a8 8 0 0 0-16 0"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                    <input
+                                        type="text"
+                                        placeholder="Name"
+                                        class="form-input pl-10"
+                                    />
+                                </div>
+                                <div class="relative">
+                                    <span
+                                        class="absolute top-1/2 left-2.5 z-1 -translate-y-1/2"
+                                    >
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="text-secondary size-5"
+                                        >
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                            />
+                                            <path
+                                                d="M14.05 2a9 9 0 0 1 8 7.94"
+                                            />
+                                            <path
+                                                d="M14.05 6A5 5 0 0 1 18 10"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <input
+                                        type="text"
+                                        placeholder="Phone"
+                                        class="form-input pl-10"
+                                    />
+                                </div>
+                            </div>
+                            <div class="grid gap-5 sm:grid-cols-2">
+                                <div
+                                    class="relative w-full"
+                                    x-data="select"
+                                    @click.outside="open = false"
+                                >
+                                    <button
+                                        type="button"
+                                        @click="toggle"
+                                        class="border-b-gray-light text-gray focus:border-b-secondary focus:text-secondary flex w-full items-center gap-3 border-y border-t-transparent bg-transparent px-2.5 py-3.5 text-left text-base/5 font-medium"
+                                    >
+                                        <svg
+                                            width="24"  
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="text-secondary size-5"
+                                        >
+                                            <path
+                                                d="M4 9a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1V4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4a1 1 0 0 1-1 1z"
+                                            />
+                                        </svg>
+                                        <span
+                                            x-text="(contact == '') ? 'Select Service' : contact"
+                                            :class="(contact === '') && 'text-gray'"
+                                            >Select
+                                        </span>
+                                    </button>
+                                    <div
+                                        class="bg-secondary text-primary absolute inset-x-0 top-full z-20 max-h-60 overflow-y-auto rounded-lg p-2 text-sm/5 font-medium"
+                                        x-show="open"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                            @click="setContact('Dental')"
+                                            :class="(contact === 'Dental') && 'bg-primary/50 text-white'"
+                                        >
+                                            Dental
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                            @click="setContact('Pediatric')"
+                                            :class="(contact === 'Pediatric') && 'bg-primary/50 text-white'"
+                                        >
+                                            Pediatric
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                            @click="setContact('Gynecology')"
+                                            :class="(contact === 'Gynecology') && 'bg-primary/50 text-white'"
+                                        >
+                                            Gynecology
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                            @click="setContact('Cardiology')"
+                                            :class="(contact === 'Cardiology') && 'bg-primary/50 text-white'"
+                                        >
+                                            Cardiology
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                            @click="setContact('Neurology')"
+                                            :class="(contact === 'Neurology') && 'bg-primary/50 text-white'"
+                                        >
+                                            Neurology
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                            @click="setContact('Other')"
+                                            :class="(contact === 'Other') && 'bg-primary/50 text-white'"
+                                        >
+                                            Other
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="relative w-full">
+                                    <span
+                                        class="text-secondary absolute top-1/2 left-2.5 -translate-y-1/2"
+                                    >
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="size-5"
+                                        >
+                                            <path d="M8 2v4" />
+                                            <path d="M16 2v4" />
+                                            <rect
+                                                width="18"
+                                                height="18"
+                                                x="3"
+                                                y="4"
+                                                rx="2"
+                                            />
+                                            <path d="M3 10h18" />
+                                            <path d="M8 14h.01" />
+                                            <path d="M12 14h.01" />
+                                            <path d="M16 14h.01" />
+                                            <path d="M8 18h.01" />
+                                            <path d="M12 18h.01" />
+                                            <path d="M16 18h.01" />
+                                        </svg>
+                                    </span>
+                                    <input
+                                        type="text"
+                                        class="datepicker-input form-input pl-10"
+                                        placeholder="DD/MM/YYYY"
+                                    />
+                                </div>
+                            </div>
+                            <div class="relative mb-0 flex">
+                                <span class="absolute top-4 left-2.5 z-1">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="text-secondary size-5"
+                                    >
+                                        <path
+                                            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                                        />
+                                        <path d="M8 10h.01" />
+                                        <path d="M12 10h.01" />
+                                        <path d="M16 10h.01" />
+                                    </svg>
+                                </span>
+                                <textarea
+                                    type="text"
+                                    placeholder="Message"
+                                    rows="5"
+                                    class="form-textarea pl-10"
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn mt-7">
+                                Make an Appointment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer bg-primary mt-auto">
+            <div class="container">
+                <div
+                    class="text-gray-light flex flex-col justify-between gap-6 pt-14 lg:flex-row lg:gap-14 lg:pt-20"
+                >
+                    <div class="w-full space-y-5 lg:max-w-sm lg:pb-12">
+                        <a href="/" class="inline-block">
+                            <img
+                                src="/Healthora/assets/images/logo-footer.svg"
+                                alt="logo"
+                                class="h-auto w-32"
+                            />
+                        </a>
+                        <p>
+                            Providing quality healthora with compassion and
+                            trust. Your well-being is our top priority, every
+                            step of the way.
+                        </p>
+                        <a href="/contact-us.html" class="btn">
+                            Consult with Us
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="size-5"
+                            >
+                                <path d="M7 7h10v10" />
+                                <path d="M7 17 17 7" />
+                            </svg>
+                        </a>
+                        <div class="mt-5 flex gap-5">
+                            <a
+                                href="https://www.facebook.com/sharer/sharer.php?u=https://healthora-html.vercel.app/"
+                                class="grid size-8 place-content-center rounded-full border border-gray-200 text-gray-100 opacity-70 transition hover:opacity-100"
+                                target="_blank"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="size-5 shrink-0"
+                                >
+                                    <path
+                                        d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"
+                                    ></path>
+                                </svg>
+                                <span class="sr-only">facebook</span>
+                            </a>
+                            <a
+                                href="https://twitter.com/intent/tweet?url=https://healthora-html.vercel.app/&text="
+                                class="grid size-8 place-content-center rounded-full border border-gray-200 text-gray-100 opacity-70 transition hover:opacity-100"
+                                target="_blank"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="size-5 shrink-0"
+                                >
+                                    <path
+                                        d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                                    ></path>
+                                </svg>
+                                <span class="sr-only">twitter</span>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/?url=https%3A%2F%2Fhealthcare-theme-html.vercel.app%2F"
+                                class="grid size-8 place-content-center rounded-full border border-gray-200 text-gray-100 opacity-70 transition hover:opacity-100"
+                                target="_blank"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="size-5 shrink-0"
+                                >
+                                    <path
+                                        d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                                    ></path>
+                                </svg>
+                                <span class="sr-only">instagram</span>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/shareArticle?mini=true&url=https://healthora-html.vercel.app/"
+                                class="grid size-8 place-content-center rounded-full border border-gray-200 text-gray-100 opacity-70 transition hover:opacity-100"
+                                target="_blank"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="size-5 shrink-0"
+                                >
+                                    <path
+                                        d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
+                                    ></path>
+                                </svg>
+                                <span class="sr-only">Linkedin</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="border-white/10 lg:border-x-2 lg:px-10 lg:pb-12 xl:px-20"
+                    >
+                        <h2
+                            class="border-secondary mb-5 inline-block border-b pb-1.5 text-xl font-bold whitespace-nowrap text-white lg:mb-8 lg:text-2xl"
+                        >
+                            Working Hours
+                        </h2>
+                        <div
+                            class="flex flex-row flex-wrap gap-5 sm:flex-nowrap sm:gap-10 lg:flex-col lg:gap-5"
+                        >
+                            <div class="space-y-1">
+                                <h3>Monday - Friday</h3>
+                                <p>9:00 AM - 5:00 PM</p>
+                            </div>
+                            <div class="space-y-1">
+                                <h3>Saturday</h3>
+                                <p>9:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="grid gap-8 pb-7 sm:grid-cols-2 lg:flex lg:gap-5 lg:pb-12 2xl:gap-8"
+                    >
+                        <div class="min-w-44 xl:min-w-48">
+                            <h2
+                                class="border-secondary mb-5 inline-block border-b pb-1.5 text-xl font-bold text-white lg:mb-8 lg:text-2xl"
+                            >
+                                Our Services
+                            </h2>
+                            <ul class="flex flex-col gap-3">
+                                <li>
+                                    <a
+                                        href="/about-us.html"
+                                        class="group inline-flex items-center"
+                                    >
+                                        <span
+                                            class="bg-secondary h-1 w-0 rounded-full duration-300 ease-in-out group-hover:mr-2 group-hover:w-2.5"
+                                        ></span>
+                                        About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/services.html"
+                                        class="group inline-flex items-center"
+                                    >
+                                        <span
+                                            class="bg-secondary h-1 w-0 rounded-full duration-300 ease-in-out group-hover:mr-2 group-hover:w-2.5"
+                                        ></span
+                                        >Services</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/doctors.html"
+                                        class="group inline-flex items-center"
+                                    >
+                                        <span
+                                            class="bg-secondary h-1 w-0 rounded-full duration-300 ease-in-out group-hover:mr-2 group-hover:w-2.5"
+                                        ></span
+                                        >Doctors</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/contact-us.html"
+                                        class="group inline-flex items-center"
+                                    >
+                                        <span
+                                            class="bg-secondary h-1 w-0 rounded-full duration-300 ease-in-out group-hover:mr-2 group-hover:w-2.5"
+                                        ></span
+                                        >Contact Us</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="min-w-44 xl:min-w-48">
+                            <h2
+                                class="border-secondary mb-5 inline-block border-b pb-1.5 text-xl font-bold text-white lg:mb-8 lg:text-2xl"
+                            >
+                                Resource
+                            </h2>
+                            <ul class="flex flex-col gap-3">
+                                <li>
+                                    <a
+                                        href=""
+                                        class="group inline-flex items-center"
+                                    >
+                                        <span
+                                            class="bg-secondary h-1 w-0 rounded-full duration-300 ease-in-out group-hover:mr-2 group-hover:w-2.5"
+                                        ></span>
+                                        FAQs</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="group inline-flex items-center"
+                                    >
+                                        <span
+                                            class="bg-secondary h-1 w-0 rounded-full duration-300 ease-in-out group-hover:mr-2 group-hover:w-2.5"
+                                        ></span
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="group inline-flex items-center"
+                                    >
+                                        <span
+                                            class="bg-secondary h-1 w-0 rounded-full duration-300 ease-in-out group-hover:mr-2 group-hover:w-2.5"
+                                        ></span
+                                        >Terms & Conditions</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="grid divide-white/10 border-y-2 border-white/10 lg:grid-cols-3 lg:divide-x-2"
+                >
+                    <div
+                        class="text-gray-light flex items-start gap-2.5 py-4 sm:items-center lg:justify-center lg:px-4 lg:py-10"
+                    >
+                        <span>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="text-white size-6 shrink-0  lg:size-8"
+                            >
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                                />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </span>
+                        <p class="text-base font-semibold lg:text-lg/6">
+                            4648 Lorem ipsum Consectetur AA, 1920
+                        </p>
+                    </div>
+                    <div
+                        class="text-gray-light flex items-center gap-2.5 py-4 lg:justify-center lg:px-4 lg:py-10"
+                    >
+                        <span>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="text-white size-6 shrink-0  lg:size-8"
+                            >
+                                <rect
+                                    width="20"
+                                    height="16"
+                                    x="2"
+                                    y="4"
+                                    rx="2"
+                                />
+                                <path
+                                    d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                                />
+                            </svg>
+                        </span>
+                        <a
+                            href="mailto:info@healthora.com"
+                            class="text-base font-semibold break-all transition hover:opacity-70 lg:text-lg/6"
+                            >info@healthora.com</a
+                        >
+                    </div>
+                    <div
+                        class="text-gray-light flex items-center gap-2.5 py-4 lg:justify-center lg:px-4 lg:py-10"
+                    >
+                        <span>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="text-white size-6 shrink-0 lg:size-8"
+                            >
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                />
+                            </svg>
+                        </span>
+                        <a
+                            href="tel:+111-111-1111"
+                            class="text-base font-semibold transition hover:opacity-70 lg:text-lg/6"
+                            >+111-111-1111</a
+                        >
+                    </div>
+                </div>
+                <div
+                    class="text-gray-light flex flex-col items-center justify-between gap-5 py-5 md:flex-row md:py-[30px]"
+                >
+                    <p
+                        class="order-2 text-center text-sm/[18px] font-semibold md:order-1 md:text-left"
+                    >
+                        © <span class="curr-year">2025</span>&nbsp; Healthora,
+                         All rights reserved.
+                    </p>
+                    <div class="order-1 flex items-center gap-4 md:order-2">
+                        <a
+                            class="text-sm/[18px] font-semibold underline underline-offset-2 transition hover:no-underline"
+                            href=""
+                            >Privacy Policy</a
+                        >
+                        <span
+                            class="bg-secondary h-4 w-0.5 shrink-0 rounded-full"
+                        ></span>
+                        <a
+                            class="text-sm/[18px] font-semibold underline underline-offset-2 transition hover:no-underline"
+                            href=""
+                            >Terms &amp; Conditions</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Appointment-modal -->
+        <div
+            class="appointment-overlay bg-primary/80 fixed inset-0 z-50 hidden"
+            onclick="appointmentModel()"
+        ></div>
+        <div
+            id="appointment-modal"
+            class="border-secondary/10 fixed top-1/2 left-1/2 z-50 mx-auto hidden max-h-full w-full max-w-3xl -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl border bg-white shadow-[0px_5px_60px_rgba(0,0,0,0.05)]"
+        >
+            <button
+                type="button"
+                onclick="appointmentModel()"
+                class="text-primary absolute top-6 right-6 z-10 hover:opacity-80"
+            >
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="size-5 shrink-0 sm:size-6"
+                >
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </button>
+            <img
+                src="/Healthora/assets/images/bag.png"
+                alt="Bag"
+                class="absolute top-1/2 left-1/2 h-auto w-52 -translate-x-1/2 -translate-y-1/2 opacity-3"
+            />
+            <h3
+                class="text-primary relative p-5 pb-3.5 text-2xl font-bold sm:px-10 sm:pt-7"
+            >
+                Make an Appointment
+            </h3>
+            <form class="border-t-gray/10 space-y-5 border-t p-5 sm:p-10">
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <div class="relative">
+                        <span
+                            class="absolute top-1/2 left-2.5 z-1 -translate-y-1/2"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="text-secondary size-5"
+                            >
+                                <circle cx="12" cy="8" r="5"></circle>
+                                <path d="M20 21a8 8 0 0 0-16 0"></path>
+                            </svg>
+                        </span>
+                        <input
+                            type="text"
+                            placeholder="Name"
+                            class="form-input pl-10"
+                        />
+                    </div>
+                    <div class="relative">
+                        <span
+                            class="absolute top-1/2 left-2.5 z-1 -translate-y-1/2"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="text-secondary size-5"
+                            >
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                />
+                                <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+                                <path d="M14.05 6A5 5 0 0 1 18 10" />
+                            </svg>
+                        </span>
+                        <input
+                            type="text"
+                            placeholder="Phone"
+                            class="form-input pl-10"
+                        />
+                    </div>
+                </div>
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <div
+                        class="relative w-full"
+                        x-data="select"
+                        @click.outside="open = false"
+                    >
+                        <button
+                            type="button"
+                            @click="toggle"
+                            class="border-gray-light text-gray focus:border-secondary focus:text-secondary flex w-full items-center gap-3 border-b bg-transparent px-2.5 py-3.5 text-left text-base/5 font-medium"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="text-secondary size-5"
+                            >
+                                <path
+                                    d="M4 9a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1V4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4a1 1 0 0 1-1 1z"
+                                />
+                            </svg>
+                            <span
+                                x-text="(contact == '') ? 'Select Service' : contact"
+                                :class="(contact === '') && 'text-gray'"
+                                >Select Service
+                            </span>
+                        </button>
+                        <div
+                            class="bg-secondary text-primary absolute inset-x-0 top-full z-20 max-h-60 overflow-y-auto rounded-lg p-2 text-sm/5 font-medium"
+                            x-show="open"
+                        >
+                            <button
+                                type="button"
+                                class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                @click="setContact('Dental')"
+                                :class="(contact === 'Dental') && 'bg-primary/50 text-white'"
+                            >
+                                Dental
+                            </button>
+                            <button
+                                type="button"
+                                class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                @click="setContact('Pediatric')"
+                                :class="(contact === 'Pediatric') && 'bg-primary/50 text-white'"
+                            >
+                                Pediatric
+                            </button>
+                            <button
+                                type="button"
+                                class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                @click="setContact('Gynecology')"
+                                :class="(contact === 'Gynecology') && 'bg-primary/50 text-white'"
+                            >
+                                Gynecology
+                            </button>
+                            <button
+                                type="button"
+                                class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                @click="setContact('Cardiology')"
+                                :class="(contact === 'Cardiology') && 'bg-primary/50 text-white'"
+                            >
+                                Cardiology
+                            </button>
+                            <button
+                                type="button"
+                                class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                @click="setContact('Neurology')"
+                                :class="(contact === 'Neurology') && 'bg-primary/50 text-white'"
+                            >
+                                Neurology
+                            </button>
+                            <button
+                                type="button"
+                                class="hover:bg-primary/50 relative flex w-full rounded-lg px-3 py-2 text-white transition"
+                                @click="setContact('Other')"
+                                :class="(contact === 'Other') && 'bg-primary/50 text-white'"
+                            >
+                                Other
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative w-full">
+                        <span
+                            class="text-secondary absolute top-1/2 left-2.5 -translate-y-1/2"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="size-5"
+                            >
+                                <path d="M8 2v4" />
+                                <path d="M16 2v4" />
+                                <rect
+                                    width="18"
+                                    height="18"
+                                    x="3"
+                                    y="4"
+                                    rx="2"
+                                />
+                                <path d="M3 10h18" />
+                                <path d="M8 14h.01" />
+                                <path d="M12 14h.01" />
+                                <path d="M16 14h.01" />
+                                <path d="M8 18h.01" />
+                                <path d="M12 18h.01" />
+                                <path d="M16 18h.01" />
+                            </svg>
+                        </span>
+                        <input
+                            type="text"
+                            class="datepicker-input form-input pl-10"
+                            placeholder="DD/MM/YYYY"
+                        />
+                    </div>
+                </div>
+                <div class="relative">
+                    <span class="absolute top-4 left-2.5 z-1">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="text-secondary size-5"
+                        >
+                            <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                            />
+                            <path d="M8 10h.01" />
+                            <path d="M12 10h.01" />
+                            <path d="M16 10h.01" />
+                        </svg>
+                    </span>
+                    <textarea
+                        type="text"
+                        placeholder="Message"
+                        rows="5"
+                        class="form-textarea pl-10"
+                    ></textarea>
+                </div>
+                <button class="btn">Make an Appointment</button>
+            </form>
+        </div>
+
+        <button
+            id="back-to-top"
+            class="group text-secondary hover:text-primary invisible fixed right-6 bottom-6 z-30 flex size-14 items-center justify-center rounded-full border border-white bg-white opacity-0 shadow-lg transition-opacity duration-300"
+            onclick="scrollToTop()"
+        >
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path d="m18 15-6-6-6 6" />
+            </svg>
+            <div
+                id="progress-bar"
+                class="absolute top-0 left-0 flex h-full w-full items-center justify-center"
+            >
+                <svg
+                    class="text-secondary h-full w-full"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 100 100"
+                >
+                    <circle
+                        cx="50"
+                        cy="50"
+                        r="45"
+                        stroke="#ddd"
+                        stroke-width="10"
+                        fill="none"
+                    />
+                    <circle
+                        id="progress-circle"
+                        cx="50"
+                        cy="50"
+                        r="45"
+                        stroke="currentColor"
+                        stroke-width="6"
+                        fill="none"
+                        stroke-dasharray="283"
+                        stroke-dashoffset="283"
+                    />
+                </svg>
+            </div>
+        </button>
+
+        <script src="/assets/js/custom.js"></script>
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/datepicker-full.min.js"></script>
+        <script src="assets/js/select.min.js"></script>
+        <script src="assets/js/vanilla-counter.js"></script>
+ <script src="assets/js/theme-rtl.js"></script>
+        <script>
+            // our-team-swiper
+            var swiper = new Swiper('.team-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                loop: true,
+                speed: 1500,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.team-swiper-pagination',
+                    type: 'bullets',
+                    clickable: 'true',
+                },
+                navigation: {
+                    nextEl: '.team-swiper-btn-next',
+                    prevEl: '.team-swiper-btn-prev',
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1280: {
+                        slidesPerView: 5,
+                        spaceBetween: 40,
+                    },
+                },
+            })
+
+            // datepicker
+            document.addEventListener('DOMContentLoaded', function () {
+                const datepickers =
+                    document.querySelectorAll('.datepicker-input')
+                datepickers.forEach(function (elem) {
+                    const datepicker = new Datepicker(elem, {
+                        buttonClass: 'btn',
+                    })
+                })
+            })
+
+            // Counter Js
+            VanillaCounter()
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Doctors | Healthora",
+                "url": "https://healthora-html.vercel.app/doctors.html",
+                "description": "Expert care, advanced treatments—your health, our top priority.",
+                "inLanguage": "en",
+                "image": "https://healthora-html.vercel.app/assets/images/logo.png",
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://healthora-html.vercel.app/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Doctors",
+                            "item": "https://healthora-html.vercel.app/doctors.html"
+                        }
+                    ]
+                }
+            }
+        </script>
+    </body>
+</html>

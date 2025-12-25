@@ -1,0 +1,4 @@
+
+User-agent: *
+
+Sitemap: https://healthora-nextjs.vercel.app/sitemap.xml

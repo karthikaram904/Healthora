@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=fallback');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=fallback');
+
+@import 'tailwindcss';
+
+@tailwindcss /forms;
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1472px;
+
+    --font-*: initial;
+    --font-plus-jakarta: 'Plus Jakarta Sans', serif;
+    --font-roboto: 'Roboto Serif', sans-serif;
+
+    --color-*: initial;
+    --color-transparent: transparent;
+    --color-white: #ffffff;
+    --color-black: #1d1d1d;
+    --color-primary: #13182f;
+    --color-secondary: #3d65ff;
+    --color-gray: #666e82;
+    --color-gray-light: #d5dff0;
+    --color-gray-100: #f7f7f7;
+    --color-gray-200: #f2f7fd;
+
+    --animate-marquee: marquee 30s linear infinite;
+}
+
+@layer base {
+    button:not(:disabled),
+    [role='button']:not(:disabled) {
+        cursor: pointer;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+@utility prose {
+    color: #3c2f22;
+    font-weight: 500;
+    font-size: 18px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-primary font-semibold;
+    }
+    h2 {
+        @apply mt-7 mb-4.5 text-[26px] tracking-[1.3px];
+    }
+    h3 {
+        @apply mt-0 mb-3 text-2xl/9 tracking-[1.2px];
+    }
+    h4,
+    h5,
+    h6 {
+        @apply mt-0 mb-2.5 tracking-[0.5px] font-semibold text-xl;
+    }
+    ul {
+        @apply ps-5;
+    }
+    ul > li {
+        @apply mt-0 mb-2 ps-0 text-base/5 font-normal marker:text-base/5!;
+    }
+    a {
+        @apply text-secondary text-base transition no-underline hover:underline;
+    }
+    p {
+        @apply text-primary mt-0 text-base/6 font-normal;
+    }
+    ol {
+        @apply ps-7.5;
+    }
+    ol > li {
+        @apply mt-0 mb-1 ps-0 marker:text-[22px] marker:font-semibold marker:text-black marker:uppercase;
+    }
+    blockquote {
+        @apply my-7.5 border-black bg-[#009c651f] p-4 pl-4.5 text-lg/7.5 text-[#111827];
+    }
+}
+@layer components {
+    .btn {
+        @apply bg-secondary relative z-[1] inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-base/5 font-medium text-white shadow-[inset_0_1px_2px_0_rgba(255,255,255,0.3)] duration-300 hover:bg-[#274FEB];
+    }
+
+    .btn-secondary {
+        @apply text-primary ring-primary hover:bg-primary bg-transparent shadow-none ring-1 duration-300 ring-inset hover:text-white;
+    }
+    .nav-links {
+        @apply before:bg-secondary hover:text-secondary relative inline-flex gap-2.5 px-1 py-2 text-base/5 font-semibold text-white transition before:absolute before:bottom-0 before:left-1/2 before:h-1 before:w-0 before:rounded-full before:duration-300 before:hover:inset-x-0 before:hover:w-full xl:py-7;
+    }
+    .nav-links.active {
+        @apply text-secondary before:inset-x-0 before:w-full;
+    }
+
+    .form-input,
+    .form-textarea {
+        @apply border-b-gray-light text-gray placeholder:text-gray focus:border-b-secondary focus:text-secondary w-full border border-transparent bg-transparent px-4 py-3.5 text-base/5 font-medium transition focus:border-transparent focus:ring-0 focus:outline-none;
+    }
+    .form-textarea {
+        @apply resize-none;
+    }
+}
+
+header.scroll {
+    @apply duration-300 lg:mt-1;
+}
+/* contact menu */
+.contact-menu.open {
+    @apply right-0;
+}
+.contact-overlay.overlay-hidden {
+    @apply visible opacity-100;
+}
+.contact-overlay.overlay-hidden .overlay {
+    @apply left-0 w-full;
+}
+
+/* team-swiper-pagination */
+.team-swiper-pagination .swiper-pagination-bullet {
+    @apply border-primary size-5 border-[5px] bg-white opacity-40;
+}
+.team-swiper-pagination .swiper-pagination-bullet-active {
+    @apply ring-secondary size-5 opacity-100 ring-1 transition-all duration-500;
+}
+/* testimonials-swiper-pagination */
+.testimonials-swiper-pagination .swiper-pagination-bullet {
+    @apply border-primary size-2.5 border-[3px] bg-white opacity-40;
+}
+.testimonials-swiper-pagination .swiper-pagination-bullet-active {
+    @apply ring-secondary size-2.5 opacity-100 ring-1 transition-all duration-500;
+}
+
+/* Tabs */
+.tab {
+    @apply after:border-l-gray-light hover:text-secondary relative overflow-hidden rounded-lg bg-white px-5 py-3 pl-10 text-left text-lg font-medium duration-300 after:absolute after:inset-y-0 after:-left-full after:h-full after:w-1 after:border-24 after:border-transparent after:duration-300 hover:rounded-l-none hover:after:left-0;
+}
+.tab.active-tab {
+    @apply text-secondary rounded-l-none after:left-0;
+}
+.tab-content {
+    @apply hidden;
+}
+.tab-content.active-content {
+    @apply block;
+}
+
+/* Accordion */
+.accordion-content {
+    @apply max-h-0 overflow-hidden duration-300;
+}
+.accordion-trigger.active {
+    @apply before:bg-secondary before:inset-x-0 before:w-full;
+}
+.accordion-trigger {
+    @apply relative before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-0 before:bg-transparent before:duration-500;
+}
+.accordion-trigger.active .plus {
+    @apply -rotate-90;
+}
+.accordion-trigger.active .plus .path1 {
+    @apply hidden;
+}
+
+/* flipheart */
+@keyframes flipheart {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+.flipheart {
+    animation: flipheart 4s ease-in-out infinite;
+}
+/* testimonial animation */
+@keyframes jump {
+    0%,
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-30px) translateX(0);
+    }
+}
+.jump {
+    animation: jump 10s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.8;
+    }
+}
+.pulse {
+    animation: pulse 5s ease-in-out infinite;
+}
+
+/* datepicker css */
+.datepicker-input.in-edit {
+    @apply border-secondary focus:shadow-none;
+}
+.datepicker {
+    @apply left-1/2! w-max -translate-x-1/2 text-white lg:left-0! lg:-translate-x-0!;
+}
+.datepicker .datepicker-picker {
+    @apply rounded-lg bg-white shadow-md;
+}
+.datepicker .datepicker-controls {
+    @apply border-secondary/20 flex items-center gap-1 border-b p-1!;
+}
+.datepicker .datepicker-controls .prev-button,
+.datepicker .datepicker-controls .next-button,
+.datepicker .datepicker-controls .view-switch {
+    @apply text-secondary flex shrink-0 items-center justify-center bg-transparent;
+}
+.datepicker .datepicker-controls .prev-button,
+.datepicker .datepicker-controls .next-button {
+    @apply border-secondary/20 hover:text-primary text-secondary size-9 border bg-transparent pb-3.5;
+}
+.datepicker .datepicker-main {
+    @apply w-full min-w-max p-1;
+}
+.datepicker .days-of-week .dow,
+.datepicker .datepicker-grid .dow {
+    @apply text-primary w-8 shrink-0;
+}
+.datepicker .datepicker-footer {
+    @apply hidden;
+}
+.datepicker-cell {
+    @apply text-primary;
+}
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+    @apply bg-secondary! text-white;
+}
+
+.datepicker-cell.next,
+.datepicker-cell.prev {
+    @apply text-gray/50!;
+}
+.datepicker .days {
+    @apply gap-1 text-base/5;
+}
+.datepicker-cell.focused:not(.selected),
+.datepicker-cell:hover {
+    @apply bg-primary/30!;
+}
+.datepicker-cell.day.next {
+    @apply hidden;
+}
+
+#back-to-top.visible {
+    opacity: 100;
+    visibility: visible;
+}
